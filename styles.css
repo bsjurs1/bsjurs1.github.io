@@ -132,7 +132,7 @@ p {
 
 #phonesection2LeftCol img {
     position: relative;
-    top: 20%;
+    margin-top: 20%;
     height: 50%;
     float: right;
 }

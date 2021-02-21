@@ -1,0 +1,299 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    border: 0%;
+    font-family: Roboto;
+    color: white;
+}
+
+body {
+    background-color: rgb(18,19,18);
+}
+
+header {
+    background-color: rgb(18,19,18);
+    width: 100%;
+    height: 150px;
+}
+
+header > div:nth-child(1) {
+    height: 20px;
+}
+
+.logo {
+    height: 60px;
+    width: 60px;
+    margin-top: 20px;
+    float: left;
+}
+
+.headerMain {
+    height: 100px;
+    width: 60%;
+    margin-left: 20%;
+}
+
+.headerLink {
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    float: right;
+    font-size: 0.9em;
+}
+
+.headerLink:hover {
+    text-decoration: underline rgb(237,63,91) 2px;
+    text-underline-offset: 20px;
+}
+
+.headerLinks {
+    width: 25%;
+    height: 50%;
+    float: right;
+    margin-top: 25px;
+    min-width: 180px;
+}
+
+main {
+    background-color: black;
+    display: block;
+    width: 100%;
+}
+
+.phoneSection1 {
+    height: 800px;
+    background-color: black;
+}
+
+#phonesection1LeftCol {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+#phoneSection1LeftColTextContainer {
+    height: 30%;
+    width: 60%;
+    margin-left: 25%;
+    top: 35%;
+    position: relative;
+    display: block;
+}
+
+#phoneSection1LeftColTextContainer h1 {
+    font-size: 3.0em;
+}
+
+#phoneSection1LeftColTextContainer p {
+    font-size: 1.1em;
+    margin-top: 40px;
+    color: rgb(187, 184, 192);
+}
+
+#phonesection1RightCol {
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+
+#phonesection1RightCol img {
+    position: relative;
+    top: 20%;
+    height: 70%;
+}
+
+.phoneSection2 {
+    background-color: black;
+    height: 1000px;
+}
+
+.workSection {
+    align-items: center;
+    background-color: rgb(237,63,91);
+    height: 400px;
+}
+
+p {
+    word-spacing: 4px;
+    line-height: 25px;
+}
+
+#phonesection2LeftCol {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+#phonesection2RightCol {
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+
+#phonesection2LeftCol img {
+    position: relative;
+    top: 20%;
+    height: 50%;
+    float: right;
+}
+
+.workSection h1 {
+    text-align: center;
+    display: block;
+    position: relative;
+    bottom: 0;
+    height: 40%;
+}
+
+.workSection h3 {
+    display: block;
+    position: relative;
+}
+
+.workSection p {
+    display: block;
+    position: relative;
+}
+
+.workSection > div:nth-child(1) {
+    width: 100%;
+    height: 150px;
+}
+
+#tailorSection {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%
+}
+
+#tailorSection h3 {
+    text-align: center;
+    margin: 5px;
+    position: relative;
+    top: 20px;
+}
+
+#tailorSection p {
+    padding: 40px 80px 40px 80px;
+    color: rgb(251, 203, 211);
+}
+
+#distractionsSection {
+    position: relative;
+    float: right;   
+    width: 50%;
+    height: 100%;
+}
+
+#distractionsSection h3 {
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+#distractionsSection p {
+    padding: 40px 80px 40px 80px;
+    color: rgb(251, 203, 211);
+}
+
+.phoneSection3 {
+    height: 300px;
+    width: 100%;
+}
+
+.phoneSection3 img {
+    width: 191px;
+    height: 64px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 20%;
+}
+
+.phoneSection3 p {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    text-align: center;
+    margin-top: 30px;
+    word-spacing: 1px;
+    color: rgb(151, 151, 151);
+    position: relative;
+    top: 25%;
+}
+
+footer {
+    background-color: rgb(18,19,18);
+    height: 300px;
+}
+
+footer div:nth-child(1) {
+    height: 30%;
+}
+
+footer div:nth-child(1) h5 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 20px;
+    font-weight: lighter;
+}
+
+footer div:nth-child(2) {
+    height: 70%;
+}
+
+footer div:nth-child(2) > div:nth-child(1) {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+footer div:nth-child(2) > div:nth-child(2) {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+li {
+    font-weight: lighter;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+
+ul {
+    width: 80%;
+    height: 80%;
+    margin-top: 5%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about {
+    height: 500px;
+}
+
+#about > div:nth-child(1) {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 100px;
+}
+
+#about > div:nth-child(2) {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 100px;
+}

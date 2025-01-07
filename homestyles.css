@@ -1,0 +1,263 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: white;
+}
+
+body {
+    background-color: rgb(18, 19, 18);
+}
+
+/* Header */
+header {
+    background-color: rgb(18, 19, 18);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.headerMain {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.logo {
+    height: 60px;
+    width: 60px;
+}
+
+.headerLinks {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.headerLinks a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.headerLinks a:hover {
+    text-decoration: underline rgb(237, 63, 91) 2px;
+    text-underline-offset: 3px;
+}
+
+/* Main Content Sections */
+main {
+    width: 100%;
+}
+
+/* Phone Section 1 */
+.phoneSection1, .phoneSection2, .phoneSection3 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#phonesection1LeftCol, #phonesection1RightCol,
+#phonesection2LeftCol, #phonesection2RightCol {
+    flex: 1;
+    padding: 20px;
+    max-width: 600px;
+}
+
+#phonesection1LeftColTextContainer h1, #phonesection2RightCol h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#phonesection1LeftColTextContainer p, #phonesection2RightCol p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: rgb(187, 184, 192);
+    margin-bottom: 20px;
+}
+
+#phonesection1RightCol img, #phonesection2LeftCol img {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Work Section */
+.workSection {
+    background-color: rgb(30, 30, 30);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.workSection h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.workContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#tailorSection, #distractionsSection {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    background-color: rgb(40, 40, 40);
+    border-radius: 8px;
+}
+
+#tailorSection h3, #distractionsSection h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#tailorSection p, #distractionsSection p {
+    font-size: 1rem;
+    color: rgb(187, 184, 192);
+    line-height: 1.8;
+}
+
+/* Phone Section 3 */
+.phoneSection3 {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.phoneSection3 img {
+    width: 191px;
+    height: 64px;
+    margin-bottom: 20px;
+}
+
+.phoneSection3 p {
+    font-size: 1rem;
+    color: rgb(151, 151, 151);
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(18, 19, 18);
+    padding: 20px;
+    text-align: center;
+}
+
+footer h5 {
+    margin: 10px 0;
+    font-weight: lighter;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+    color: rgb(151, 151, 151);
+}
+
+footer ul li {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .headerLinks {
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .phoneSection1, .phoneSection2 {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #phonesection1LeftCol, #phonesection1RightCol,
+    #phonesection2LeftCol, #phonesection2RightCol {
+        width: 100%;
+        max-width: none;
+    }
+
+    .workContent {
+        flex-direction: column;
+    }
+
+    #phonesection1LeftColTextContainer h1, #phonesection2RightCol h2 {
+        font-size: 2rem;
+    }
+
+    #phonesection1LeftColTextContainer p, #phonesection2RightCol p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        height: 50px;
+        width: 50px;
+    }
+
+    #phonesection1LeftColTextContainer h1, #phonesection2RightCol h2 {
+        font-size: 1.5rem;
+    }
+
+    #phonesection1LeftColTextContainer p, #phonesection2RightCol p {
+        font-size: 0.9rem;
+    }
+
+    .phoneSection3 p {
+        font-size: 0.9rem;
+    }
+
+    footer ul li {
+        font-size: 0.8rem;
+    }
+}
+
+/* App Store Section */
+.phoneSection3 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: col;
+    padding: 40px 20px;
+    background-color: rgb(18, 19, 18); /* Keep it consistent with the rest of the site */
+}
+
+.phoneSection3 .app-store-button {
+    display: inline-block;
+    margin: 20px 0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.phoneSection3 img {
+    width: 180px;
+    height: auto;
+}
+
+.phoneSection3 p {
+    font-size: 1rem;
+    color: rgb(200, 200, 200); /* Softer text color */
+    margin-top: 20px;
+    line-height: 1.6;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
